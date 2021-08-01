@@ -1,67 +1,41 @@
-"use strict";
-
-var questions = [
-  {
-    question: "Тестовый вопрос",
-    answer: 1,
-    valuesYes: [
-      {
-        axis: "dir",
-        value: 3
-      }
-    ],
-    valuesNo: [
-      {
-        axis: "auto",
-        value: 3
-      }
-    ]
-  },
-  {
-    question: "Тестовый вопрос2",
-    answer: 0,
-    valuesYes: [
-      {
-        axis: "prog",
-        value: 3
-      }
-    ],
-    valuesNo: []
-  },    
-  {
-    question: "Тестовый вопрос3",
-    answer: 0,
-    valuesYes: [
-      {
-        axis: "mono",
-        value: 3
-      }
-    ],
-    valuesNo: [
-      {
-        axis: "poly",
-        value: 3
-      }
-    ]
-  }
-];
+questions = {
+        "test1": {
+            "question": "123",
+            "answers": [
+                "yes",
+                "no"
+            ],
+            "results": {},
+            "nextquestion": {
+                "yes": "test2",
+                "no": "test2"
+            }
+        },
+        "test2": {
+            "question": "456",
+            "answers": [
+                "yes",
+                "no"
+            ],
+            "results": {},
+            "nextquestion": {
+                "no": "test3",
+            }
+        },
+        "test3": {
+            "question": "789",
+            "answers": [
+                "yes",
+                "no"
+            ],
+            "results": {},
+            "nextquestion": {
+            }
+        }
+    }
 
 var qn = 0; // Question number
 var prev_answer = null;
-
-function shuffle(array) {
-  var i = 0,
-    j = 0,
-    temp = null;
-
-  for (i = array.length - 1; i > 0; i -= 1) {
-    j = Math.floor(Math.random() * (i + 1));
-    temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-  }
-}
-shuffle(questions);
 
 init_question();
 
