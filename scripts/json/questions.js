@@ -1,6 +1,6 @@
 questions = { // don't change this line
         "test1": {
-            "question_en": "123123123",
+            "question_en": "First",
             "answers": [
                 "yes",
                 "no",
@@ -10,7 +10,9 @@ questions = { // don't change this line
             "results": {},
             "nextquestion": {
                 "yes": "test2",
-                "no": "test2"
+                "no": "test2",
+                "idk": "test2",
+                "apathy": "test2"
             }
         },
         "test2": {
