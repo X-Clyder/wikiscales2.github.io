@@ -3,7 +3,9 @@ questions = { // don't change this line
             "question_en": "123123123",
             "answers": [
                 "yes",
-                "no"
+                "no",
+                "idk",
+                "apathy"
             ],
             "results": {},
             "nextquestion": {
