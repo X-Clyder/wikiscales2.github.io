@@ -1,48 +1,37 @@
-questions = { // don't change this line
-        "test1": {
-            "question": "First",
-            "answers": [
-                "yes",
-                "no",
-                "idk",
-                "apathy"
-            ],
-            "results": {},
-            "nextquestion": {
-                "yes": "test2",
-                "no": "test2",
-                "idk": "test2",
-                "apathy": "test2"
-            }
-        },
-        "test2": {
-            "question": "456456456?",
-            "answers": [
-                "yes",
-                "no"
-            ],
-            "results": {
-                "yes": "autocracy",
-            },
-            "nextquestion": {
-                "no": "test3",
-            }
-        },
-        "test3": {
-            "question": "TESTTEST1112121BLABLAL--BL212121121212TESTTEST1112121BLABLAL--BL212121121212?",
-            "answers": [
-                "yes",
-                "no"
-            ],
-            "results": {
-                "yes": "democracy1",
-                "no": "democracy2",
-            },
-            "nextquestion": {
-            }
-        }
-    }
+"use strict";
 
+var questions = [
+  {
+    question: "Первый тестовый вопрос.",
+    answer: [
+        "yes": [
+      {
+        axis: "merge",
+        value: 3
+      }
+    ],
+        "no": [
+      {
+        axis: "separa",
+        value: 3
+      }
+    ],
+        "idk": [
+      {
+        axis: "exo",
+        value: 3
+      }
+    ],
+        "apathy": [
+      {
+        axis: "meta",
+        value: 3
+      }
+    ],
+    ],
+  }
+];
+    
 var qn = 0; // Question number
 var prev_answer = null;
 
