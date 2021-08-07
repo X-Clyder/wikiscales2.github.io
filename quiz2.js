@@ -1,6 +1,6 @@
 questions = { // don't change this line
         "test1": {
-            "question_en": "First",
+            "question": "First",
             "answers": [
                 "yes",
                 "no",
@@ -16,7 +16,7 @@ questions = { // don't change this line
             }
         },
         "test2": {
-            "question_en": "456456456?",
+            "question": "456456456?",
             "answers": [
                 "yes",
                 "no"
@@ -29,7 +29,7 @@ questions = { // don't change this line
             }
         },
         "test3": {
-            "question_en": "TESTTEST1112121BLABLAL--BL212121121212TESTTEST1112121BLABLAL--BL212121121212?",
+            "question": "TESTTEST1112121BLABLAL--BL212121121212TESTTEST1112121BLABLAL--BL212121121212?",
             "answers": [
                 "yes",
                 "no"
