@@ -1,17 +1,18 @@
-buttons = {
+buttons = { // don't change this line
     "yes": {
-        <button onclick="next_question(1)" class="strong-agree">
-            Да
-        </button>
+        "text_en": "Да",
+        "color": "#1b5e20"
     },
     "no": {
-        <button onclick="next_question(1)" class="strong-disagree">
-            Нет
-        </button>
+        "text_en": "Нет",
+        "color": "#b71c1c"
     },
-    "Idk": {
-        <button onclick="next_question(1)" class="neutral">
-            Не знаю
-        </button>
+    "idk": {
+        "text_en": "Я не согласен со всеми вышеописанными мнениями",
+        "color": "#000000"
+    },
+    "apathy": {
+        "text_en": "Меня не интересует этот вопрос",
+        "color": "#cd0000"
     }
 }
