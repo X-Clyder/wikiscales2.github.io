@@ -3,7 +3,8 @@
 var questions = [
   {
     question: "Первый тестовый вопрос.",
-    answer: [
+    answer: 0,
+    valuesYes: [
         "yes": [
       {
         axis: "merge",
