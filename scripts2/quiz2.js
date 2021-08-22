@@ -1,37 +1,126 @@
 "use strict";
 
 var questions = [
-  {
-    question: "Первый тестовый вопрос.",
-    answer: 0,
-    valuesYes: [
-        "yes": [
-      {
-        axis: "merge",
-        value: 3
-      }
-    ],
-        "no": [
-      {
-        axis: "separa",
-        value: 3
-      }
-    ],
-        "idk": [
-      {
-        axis: "exo",
-        value: 3
-      }
-    ],
-        "apathy": [
-      {
-        axis: "meta",
-        value: 3
-      }
-    ],
-    ],
-  }
-];
+    //Valid questionTypes: customNumber, smallSelection, bigSelection, customText
+    {
+    "id": 1,
+    "question": "How would you classify yourself as?",
+    "questionType": "smallSelection",
+    "answers":[
+        {
+        "label": "Authoritarian Left",
+        "color": "#990000",
+        "effect": "AuthLeft"
+        },
+        {
+        "label": "Authoritarian Right",
+        "color": "#003399",
+        "effect": "AuthRight"
+        },
+        {
+        "label": "Centrist",
+        "color": "#999999",
+        "effect": "Centrist"
+        },
+        {
+        "label": "Libertarian Left",
+        "color": "#339900",
+        "effect": "LibLeft"
+        },
+        {
+        "label": "Libertarian Right",
+        "color": "#999900",
+        "effect": "LibRight"
+        },
+        {
+        "label": "Unaffiliated / Don't know",
+        "color": "#999999",
+        "effect": null
+        }]
+    },
+    {
+    "id": 2,
+    "question": "How would you classify yourself as?",
+    "questionType": "smallSelection",
+    "answers":[
+        {
+        "label": "Authoritarian",
+        "color": "#6d4cb0",
+        "effect": "Auth"
+        },
+        {
+        "label": "Rightist",
+        "color": "#4c96af",
+        "effect": "Right"
+        },
+        {
+        "label": "Centrist",
+        "color": "#999999",
+        "effect": "Centrist"
+        },
+        {
+        "label": "Leftist",
+        "color": "#af4c4c",
+        "effect": "Left"
+        },
+        {
+        "label": "Libertarian",
+        "color": "#4caf50",
+        "effect": "Lib"
+        },
+        {
+        "label": "Unaffiliated / Don't know",
+        "color": "#999999",
+        "effect": null
+        }]
+    },
+    {
+    "id": 3,
+    "question": "How do you view yourself on Culture?",
+    "questionType": "smallSelection",
+    "answers":[
+        {
+        "label": "Very Progressive",
+        "color": "#1b5e20",
+        "effect": 3
+        },
+        {
+        "label": "Progressive",
+        "color": "#4caf50",
+        "effect": 2
+        },
+        {
+        "label": "Leaning Progressive",
+        "color": "#7ae67e",
+        "effect": 1
+        },
+        {
+        "label": "Neutral",
+        "color": "#a9a9a9",
+        "effect": 0
+        },
+        {
+        "label": "Leaning Conservative",
+        "color": "#7acbe6",
+        "effect": -1
+        },
+        {
+        "label": "Conservative",
+        "color": "#4c96af",
+        "effect": -2
+        },
+        {
+        "label": "Very Conservative",
+        "color": "#1b4e5e",
+        "effect": -3
+        },
+        {
+        "label": "Don't Know / Refuse",
+        "color": "#a9a9a9",
+        "effect": null
+        }]
+    },
+]
     
 var qn = 0; // Question number
 var prev_answer = null;
