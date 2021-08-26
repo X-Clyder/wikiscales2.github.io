@@ -5,7 +5,6 @@ var questions = [
     {
     "id": 1,
     "question": "How would you classify yourself as?",
-    "questionType": "smallSelection",
     "answers":[
         {
         "label": "Authoritarian Left",
@@ -41,7 +40,6 @@ var questions = [
     {
     "id": 2,
     "question": "How would you classify yourself as?",
-    "questionType": "smallSelection",
     "answers":[
         {
         "label": "Authoritarian",
@@ -77,7 +75,6 @@ var questions = [
     {
     "id": 3,
     "question": "How do you view yourself on Culture?",
-    "questionType": "smallSelection",
     "answers":[
         {
         "label": "Very Progressive",
