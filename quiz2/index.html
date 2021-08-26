@@ -34,7 +34,14 @@
         <h2 id="question-number">Загрузка...</h2>
         <div class="questionBox"><p id="question-text"></p></div>
         <div class="navButtons questionButtons">
-
+        <script>
+          function init_question() {
+             if (current.questionType === "smallSelection") {
+                 current.answers.forEach(createButton);
+             }
+          }
+        </script>
+          
           <a href="#" class="button" onclick="prev_question()" id="back_button">
             Предыдущий вопрос
           </a>
