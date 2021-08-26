@@ -5,6 +5,7 @@ var questions = [
     {
     "id": 1,
     "question": "How would you classify yourself as?",
+    "questionType": "smallSelection",
     "answers":[
         {
         "label": "Authoritarian Left",
@@ -40,6 +41,7 @@ var questions = [
     {
     "id": 2,
     "question": "How would you classify yourself as?",
+    "questionType": "smallSelection",
     "answers":[
         {
         "label": "Authoritarian",
@@ -75,6 +77,7 @@ var questions = [
     {
     "id": 3,
     "question": "How do you view yourself on Culture?",
+    "questionType": "smallSelection",
     "answers":[
         {
         "label": "Very Progressive",
@@ -121,6 +124,20 @@ var questions = [
     
 var qn = 0; // Question number
 var prev_answer = null;
+
+function shuffle(array) {
+  var i = 0,
+    j = 0,
+    temp = null;
+
+  for (i = array.length - 1; i > 0; i -= 1) {
+    j = Math.floor(Math.random() * (i + 1));
+    temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+}
+shuffle(questions);
 
 init_question();
 
