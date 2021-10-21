@@ -3,15 +3,15 @@ var questions;
 
 questions = [
   {
-    question: "Первый естовый вопрос.",
-    answer: 0,
-    valuesYes: [
+    "question": "Первый естовый вопрос.",
+    "answer": 0,
+    "valuesYes": [
       {
         axis: "c0",
         value: 3
       }
     ],
-    valuesNo: [
+    "valuesNo": [
       {
         axis: "c1",
         value: 3
@@ -19,15 +19,15 @@ questions = [
     ]
   },
   {
-    question: "Второй тест222.",
-    answer: 0,
-    valuesYes: [
+    "question": "Второй тест222.",
+    "answer": 0,
+    "valuesYes": [
       {
         axis: "mono",
         value: 3
       }
     ],
-    valuesNo: [
+    "valuesNo": [
       {
         axis: "poly",
         value: 3
