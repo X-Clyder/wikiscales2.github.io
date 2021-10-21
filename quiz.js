@@ -1,6 +1,7 @@
 "use strict";
+var questions;
 
-var questions = [
+questions = [
   {
     question: "Первый естовый вопрос.",
     answer: 0,
