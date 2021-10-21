@@ -2,6 +2,41 @@
 
 var questions = [
   {
+    question: "Первый естовый вопрос.",
+    answer: 0,
+    valuesYes: [
+      {
+        axis: "c0",
+        value: 3
+      }
+    ],
+    valuesNo: [
+      {
+        axis: "c1",
+        value: 3
+      }
+    ]
+  },
+  {
+    question: "Второй тест222.",
+    answer: 0,
+    valuesYes: [
+      {
+        axis: "mono",
+        value: 3
+      }
+    ],
+    valuesNo: [
+      {
+        axis: "poly",
+        value: 3
+      }
+    ]
+  }
+];
+
+/*var questions = [
+  {
     question: "Чем больше прав и возможностей у каждого участника, тем общество справедливей и честней.",
     answer: 0,
     valuesYes: [
@@ -97,7 +132,7 @@ var questions = [
       }
     ]
   }
-];
+];*/
 
 var qn = 0; // Question number
 var prev_answer = null;
