@@ -1,40 +1,42 @@
 "use strict";
 var questions;
 
-questions = [
+/*questions = [
   {
     "question": "Первый естовый вопрос.",
-    "answer": 0,
-    "valuesYes": [
-      {
-        axis: "c0",
-        value: 3
-      }
-    ],
-    "valuesNo": [
-      {
-        axis: "c1",
-        value: 3
-      }
-    ]
+    "answers": {
+      "text1": "Да",
+      "text2": false,
+      "text3": "Я хз",
+      "text4": false,
+      "text5": "Канеш ноу ноу ноу",
+      "weight": [1, 0, 0, 0, -1]
+    },
+    "effect": {
+      "meta": 10,
+      "stat": 0,
+      "auth": 0,
+      "part": 0
+    }
   },
   {
     "question": "Второй тест222.",
-    "answer": 0,
-    "valuesYes": [
-      {
-        axis: "mono",
-        value: 3
-      }
-    ],
-    "valuesNo": [
-      {
-        axis: "poly",
-        value: 3
-      }
-    ]
+    "answers": {
+      "text1": "Да",
+      "text2": false,
+      "text3": "Я хз",
+      "text4": false,
+      "text5": "Канеш ноу ноу ноу",
+      "weight": [1, 0, 0, 0, -1]
+    },
+    "effect": {
+      "ptnl": 10,
+      "stat": 0,
+      "auth": 0,
+      "part": 0
+    }
   }
-];
+];*/
 
 /*var questions = [
   {
@@ -137,6 +139,49 @@ questions = [
 
 var qn = 0; // Question number
 var prev_answer = null;
+
+ini_question = function() {
+  document.getElementById("question-text").innerHTML = questions[qn].question; //Sets question text
+  document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + questions.length; // Sets question number
+  //Disables back button if answers is empty
+  if (answers.length === 0) {
+    document.getElementById("back_button").style.display = "none";
+    document.getElementById("back_button_off").style.display = "block";
+  } else {
+    document.getElementById("back_button").style.display = "block";
+    document.getElementById("back_button_off").style.display = "none";
+  }
+  if (questions[qn].answers.text1 !== false) {
+    document.getElementById("button1").style.display = "block";
+    document.getElementById("button1").innerHTML = questions[qn].answers.text1;
+  } else {
+    document.getElementById("button1").style.display = "none";
+  }
+  if (questions[qn].answers.text2 !== false) {
+    document.getElementById("button2").style.display = "block";
+    document.getElementById("button2").innerHTML = questions[qn].answers.text2;
+  } else {
+    document.getElementById("button2").style.display = "none";
+  }
+  if (questions[qn].answers.text3 !== false) {
+    document.getElementById("button3").style.display = "block";
+    document.getElementById("button3").innerHTML = questions[qn].answers.text3;
+  } else {
+    document.getElementById("button3").style.display = "none";
+  }
+  if (questions[qn].answers.text4 !== false) {
+    document.getElementById("button4").style.display = "block";
+    document.getElementById("button4").innerHTML = questions[qn].answers.text4;
+  } else {
+    document.getElementById("button4").style.display = "none";
+  }
+  if (questions[qn].answers.text5 !== false) {
+    document.getElementById("button5").style.display = "block";
+    return document.getElementById("button5").innerHTML = questions[qn].answers.text5;
+  } else {
+    return document.getElementById("button5").style.display = "none";
+  }
+};
 
 function shuffle(array) {
   var i = 0,
