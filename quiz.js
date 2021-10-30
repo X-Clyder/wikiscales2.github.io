@@ -66,22 +66,6 @@ var questions = [
     ]
   },
   {
-    question: "рефы! Тестовый текст <ref>Текст в подсказке</ref> продолжение тестового текста. <references/>",
-    answer: 0,
-    valuesYes: [
-      {
-        axis: "c0",
-        value: 3
-      }
-    ],
-    valuesNo: [
-      {
-        axis: "c1",
-        value: 3
-      }
-    ]
-  },
-  {
     question: "<span style=color:#ed2d1c>Для необычного</span> <small>автозаполнения</small> тестового и <tt>крутого</tt> шаблона, <sup>помимо</sup> этого <big>используйте</big> конструкцию <code>конструкцию</code> в исходном коде.",
     answer: 0,
     valuesYes: [
