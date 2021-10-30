@@ -34,11 +34,21 @@
         <h2 id="question-number">Загрузка...</h2>
         <div class="questionBox"><p id="question-text"></p></div>
         <div class="navButtons questionButtons">
-          <button onclick="next_question(1)" class="strong-agree"></button>
-          <button onclick="next_question(2)" class="agree"></button>
-          <button onclick="next_question(3)" class="neutral"></button>
-          <button onclick="next_question(4)" class="disagree"></button>
-          <button onclick="next_question(5)" class="strong-disagree"></button>
+          <button onclick="next_question(1)" class="strong-agree">
+            Согласен с 1
+          </button>
+          <button onclick="next_question(2/3)" class="agree">
+            Согласен с 2
+          </button>
+          <button onclick="next_question(-2/3)" class="disagree">
+            Согласен с 3
+          </button>
+          <button onclick="next_question(-1)" class="strong-disagree">
+            Согласен с 4
+          </button>
+          <button onclick="next_question(0)" class="neutral">
+            Не знаю/Не уверен
+          </button>
 
           <a href="#" class="button" onclick="prev_question()" id="back_button">
             Предыдущий вопрос
