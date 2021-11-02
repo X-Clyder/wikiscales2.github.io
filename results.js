@@ -82,7 +82,7 @@ var axes = ["c", "b", "p", "m", "s", "j", "t"];
 
 var bonus = {
   inc: 0.5,
-  delete: 0.5,
+  delete: 0.9,
   even: 0.5,
   imm: 0.5,
   merge: 0.5,
