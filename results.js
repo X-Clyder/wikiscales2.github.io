@@ -278,7 +278,7 @@ function onImageLoaded() {
       for (var b in bonus) {
         value = getQueryVariable(b);
         if (value > bonus[b]) {
-          numBonus++;
+          //numBonus++;
         }
       }
 
