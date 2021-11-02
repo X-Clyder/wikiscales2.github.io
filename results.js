@@ -281,7 +281,8 @@ function onImageLoaded() {
           //numBonus++;
         }
       }
-
+      
+      var yPos = 0;
       for (var b in bonus) {
         value = getQueryVariable(b);
         if (value > bonus[b]) {
@@ -290,7 +291,6 @@ function onImageLoaded() {
             rPreview.width / 22 - 40,
             yPos - 50
           );
-          //xShift += 50;
           yPos += 100;
         }
       }
