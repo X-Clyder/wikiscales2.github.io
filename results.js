@@ -296,6 +296,22 @@ function onImageLoaded() {
     }
   }
 
+/*
+for (var b in bonus) {
+        value = getQueryVariable(b);
+        if (value > bonus[b]) {
+          ctx.drawImage(
+            images[b],
+            rPreview.width / 2 - ((numBonus - 1) * 200) / 2 + xShift - 40,
+            yPos - 50
+          );
+          xShift += 50;
+        }
+      }
+    }
+  }
+  */
+
 for (var b in images) {
   var src = images[b];
   images[b] = new Image();
