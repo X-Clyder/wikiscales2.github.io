@@ -445,7 +445,7 @@ function onImageLoaded() {
           ctx.drawImage(
             images[b],
             rPreview.width / 2 - ((numBonus - 1) * 100) / 2 + xShift - 43,
-            yPos - 5
+            yPos - 50
           );
           xShift += 50;
         }
