@@ -225,7 +225,7 @@ var images = {
   t0: "/images/Автономизм_мал.png",
   t1: "/images/Унионизм_мал.png",
   inc: "/images/1.png",
-  delete: "/images/2.png",
+  delete: "/images/222.png",
   even: "/images/3.png",
   imm: "/images/4.png",
   merge: "/images/5.png",
