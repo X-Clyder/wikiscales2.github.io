@@ -287,7 +287,7 @@ function onImageLoaded() {
         if (value > bonus[b]) {
           ctx.drawImage(
             images[b],
-            rPreview.width / 28 + xShift - 40,
+            rPreview.width / 24 + xShift - 40,
             yPos - 50
           );
           xShift += 50;
