@@ -282,7 +282,7 @@ function onImageLoaded() {
         }
       }
       
-      var yPos = 80;
+      var yPos = 90;
       for (var b in bonus) {
         value = getQueryVariable(b);
         if (value > bonus[b]) {
