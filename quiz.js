@@ -32,6 +32,21 @@ var questions = [
       }
     ],
     valuesNo: []
+  },
+  {
+    question: "123.",
+    answer: 0,
+    valuesYes: [
+      {
+        axis: "revo",
+        value: 3
+      },
+      {
+        axis: "expan",
+        value: 3
+      }
+    ],
+    valuesNo: []
   }
 ];
 
