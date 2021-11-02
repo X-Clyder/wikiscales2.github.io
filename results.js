@@ -244,7 +244,7 @@ function onImageLoaded() {
     ctx.fillStyle = "#ebebeb";
     ctx.fill();
 
-    var yPos = 20;
+    var yPos = 0;
     
       //Logo
       ctx.beginPath();
