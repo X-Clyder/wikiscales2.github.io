@@ -291,7 +291,7 @@ function onImageLoaded() {
             yPos - 50
           );
           xShift += 50;
-          yPos += 50;
+          yPos += 100;
         }
       }
     }
