@@ -210,13 +210,13 @@ if (!bonusEnabled) {
 }
 
 var images = {
-  inc: "/images/1.png",
+  inc: "/images/7.png",
   delete: "/images/222.png",
   even: "/images/3.png",
   imm: "/images/4.png",
   merge: "/images/5.png",
   separa: "/images/6.png",
-  meta: "/images/7.png",
+  meta: "/images/1.png",
   exo: "/images/8.png",
   mono: "/images/9.png",
   poly: "/images/10.png",
