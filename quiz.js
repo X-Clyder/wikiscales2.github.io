@@ -52,15 +52,22 @@ var questions = [
   {
     question: "Любая власть должна быть оспоримой, каждый участник должен иметь право написать пост с конструктивной критикой, если ему не нравятся действия определённого члена администрации.",
     answer: 0,
-    valuesYes: [
-      {
-        axis: "c0",
-        value: 3
-      }
-    ],
+    valuesYes: [],
     valuesNo: [
       {
-        axis: "c1",
+        axis: "delete",
+        value: 3
+      },
+      {
+        axis: "meta",
+        value: 3
+      },
+      {
+        axis: "imm",
+        value: 3
+      },
+      {
+        axis: "poly",
         value: 3
       }
     ]
