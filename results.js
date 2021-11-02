@@ -241,7 +241,7 @@ function onImageLoaded() {
 
     ctx.beginPath();
     ctx.rect(0, 0, rPreview.width, rPreview.height);
-    ctx.fillStyle = "#ebebeb";
+    ctx.fillStyle = "#de9797";
     ctx.fill();
 
     var yPos = 0;
