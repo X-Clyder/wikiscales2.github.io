@@ -287,6 +287,32 @@ function onImageLoaded() {
         if (value > bonus[b]) {
           ctx.drawImage(
             images[b],
+            rPreview.width / 22 + xShift - 10,
+            yPos - 50
+          );
+          xShift += 50;
+          yPos += 100;
+        }
+      }
+    }
+  }
+
+//почти готово
+/*
+var xShift = 0;
+      var numBonus = 0;
+      for (var b in bonus) {
+        value = getQueryVariable(b);
+        if (value > bonus[b]) {
+          //numBonus++;
+        }
+      }
+
+      for (var b in bonus) {
+        value = getQueryVariable(b);
+        if (value > bonus[b]) {
+          ctx.drawImage(
+            images[b],
             rPreview.width / 22 + xShift - 40,
             yPos - 50
           );
@@ -296,6 +322,7 @@ function onImageLoaded() {
       }
     }
   }
+  */
 
 /*
 for (var b in bonus) {
