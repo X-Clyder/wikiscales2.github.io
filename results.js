@@ -210,20 +210,6 @@ if (!bonusEnabled) {
 }
 
 var images = {
-  c0: "/images/Демократизм_мал.png",
-  c1: "/images/Авторитаризм_мал.png",
-  j0: "/images/Свобода_мал.png",
-  j1: "/images/Цензура_мал.png",
-  s0: "/images/Коллективизм_мал.png",
-  s1: "/images/Индивидуализм_мал.png",
-  b0: "/images/Реабилитизм_мал.png",
-  b1: "/images/Репрессивизм_мал.png",
-  p0: "/images/Консерватизм_мал.png",
-  p1: "/images/Прогресс_мал.png",
-  m0: "/images/Изоляционизм_мал.png",
-  m1: "/images/Глобализм_мал.png",
-  t0: "/images/Автономизм_мал.png",
-  t1: "/images/Унионизм_мал.png",
   inc: "/images/1.png",
   delete: "/images/222.png",
   even: "/images/3.png",
@@ -286,57 +272,6 @@ function onImageLoaded() {
       yPos += 70;
 
       //Axes
-      var axesDrawInfo = [
-        {
-          key: "c",
-          color0: "#cc0000",
-          color1: "#1fad8a",
-          name0: "Демократизм",
-          name1: "Авторитаризм"
-        },
-        {
-          key: "j",
-          color0: "#25afd9",
-          color1: "#D23A22",
-          name0: "Свобода слова",
-          name1: "Цензура"
-        },
-        {
-          key: "s",
-          color0: "#DC2E51",
-          color1: "#ccc914",
-          name0: "Коллективизм",
-          name1: "Индивидуализм"
-        },
-        {
-          key: "b",
-          color0: "#34b634",
-          color1: "#916021",
-          name0: "Реабилитизм",
-          name1: "Порядок и дисциплина"
-        },
-        {
-          key: "p",
-          color0: "#7889cf",
-          color1: "#7831eb",
-          name0: "Вики-скептицизм",
-          name1: "Прогрессивизм"
-        },
-        {
-          key: "m",
-          color0: "#d69022",
-          color1: "#3cbaad",
-          name0: "Изоляционизм",
-          name1: "Глобализм"
-        },
-        {
-          key: "t",
-          color0: "#912a34",
-          color1: "#65962f",
-          name0: "Автономизм",
-          name1: "Унионизм"
-        }
-      ];
 
       var axeMargin = 100;
       var axeWidth = rPreview.width - axeMargin * 2;
