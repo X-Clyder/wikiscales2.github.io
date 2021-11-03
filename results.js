@@ -289,7 +289,7 @@ function onImageLoaded() {
           ctx.drawImage(
             images[b],
             rPreview.width / 22 - 40,
-            yPos - 50
+            //yPos - 50
           );
           yPos += 240;
         }
