@@ -291,7 +291,7 @@ function onImageLoaded() {
             rPreview.width / 22 - 40,
             yPos - 50
           );
-          yPos += 100;
+          yPos += 200;
         }
       }
     }
