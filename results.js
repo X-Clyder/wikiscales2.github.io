@@ -82,19 +82,19 @@ var axes = ["c", "b", "p", "m", "s", "j", "t"];
 
 var bonus = {
   inc: 0.5,
-  delete: 0.9,
+  delete: 0.9,//1
   even: 0.5,
   imm: 0.5,
   merge: 0.5,
   separa: 0.5,
-  meta: 0.5,
+  meta: 0.5,//1
   exo: 0.5,
   mono: 0.5,
   poly: 0.5,
   ref: 0.5,
   react: 0.5,
-  revo: 0.5,
-  expan: 0.5
+  revo: 0.9,//2
+  expan: 0.5//2
 };
 
 var characteristics = [];
@@ -211,19 +211,19 @@ if (!bonusEnabled) {
 
 var images = {
   inc: "/images/7.png",
-  delete: "/images/222.png",
+  delete: "/images/rad_1.png",//1
   even: "/images/3.png",
   imm: "/images/4.png",
   merge: "/images/5.png",
   separa: "/images/6.png",
-  meta: "/images/1.png",
+  meta: "/images/mod_1.png",//1
   exo: "/images/8.png",
   mono: "/images/9.png",
   poly: "/images/10.png",
   ref: "/images/11.png",
   react: "/images/12.png",
-  revo: "/images/13.png",
-  expan: "/images/14.png",
+  revo: "/images/rad_2.png",//2
+  expan: "/images/mod_2.png",//2
 };
 
 var numImageLoaded = 0;
