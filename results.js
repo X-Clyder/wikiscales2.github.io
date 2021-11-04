@@ -291,7 +291,7 @@ function onImageLoaded() {
           key: "c",
           color0: "#cc0000",
           color1: "#1fad8a",
-          name0: "1)",
+          name0: "1) Голосования",
           name1: ""
         },
         {
@@ -417,8 +417,8 @@ function onImageLoaded() {
 
         ctx.fillStyle = "#000000";
         ctx.font = "20px sans-serif";
-        ctx.textAlign = "left";
-        ctx.fillText(axesDrawInfo[i]["name0"], axeMargin - 20, yPos + 21);
+        ctx.textAlign = "right";
+        ctx.fillText(axesDrawInfo[i]["name0"], axeMargin - 20, yPos + 22);
 
         ctx.textAlign = "right";
         ctx.fillText(
