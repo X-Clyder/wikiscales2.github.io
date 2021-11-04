@@ -407,7 +407,7 @@ function onImageLoaded() {
         ctx.fillStyle = "#000000";
         ctx.font = "30px sans-serif";
         ctx.textAlign = "left";
-        ctx.fillText(["Свобода vs. Цензура"], axeMargin - 10, yPos + 21);
+        ctx.fillText(["Свобода vs. Цензура"], axeMargin - 15, yPos + 21);
 
         yPos += 34;
     //==================================
