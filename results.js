@@ -405,6 +405,7 @@ function onImageLoaded() {
     //<br><br>
     //==================================
     //Axes2
+    yPos += 20;
       var axesDrawInfo = [
         {
           key: "b",
