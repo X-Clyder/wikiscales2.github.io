@@ -210,20 +210,34 @@ if (!bonusEnabled) {
 }
 
 var images = {
-  inc: "/images/7.png",
-  delete: "/images/rad_1.png",//1
+  c0: "/images/Демократизм_мал.png",
+  c1: "/images/Авторитаризм_мал.png",
+  j0: "/images/Свобода_мал.png",
+  j1: "/images/Цензура_мал.png",
+  s0: "/images/Коллективизм_мал.png",
+  s1: "/images/Индивидуализм_мал.png",
+  b0: "/images/Реабилитизм_мал.png",
+  b1: "/images/Репрессивизм_мал.png",
+  p0: "/images/Консерватизм_мал.png",
+  p1: "/images/Прогресс_мал.png",
+  m0: "/images/Изоляционизм_мал.png",
+  m1: "/images/Глобализм_мал.png",
+  t0: "/images/Автономизм_мал.png",
+  t1: "/images/Унионизм_мал.png",
+  inc: "/images/1.png",
+  delete: "/images/2.png",
   even: "/images/3.png",
   imm: "/images/4.png",
   merge: "/images/5.png",
   separa: "/images/6.png",
-  meta: "/images/mod_1.png",//1
+  meta: "/images/7.png",
   exo: "/images/8.png",
   mono: "/images/9.png",
   poly: "/images/10.png",
   ref: "/images/11.png",
   react: "/images/12.png",
-  revo: "/images/rad_2.png",//2
-  expan: "/images/mod_2.png",//2
+  revo: "/images/13.png",
+  expan: "/images/14.png",
 };
 
 var numImageLoaded = 0;
