@@ -338,7 +338,7 @@ function onImageLoaded() {
         }
       ];
 
-      var axeMargin = 100;
+      var axeMargin = 80;
       var axeWidth = rPreview.width - axeMargin * 2;
       ctx.strokeStyle = "#888888";
       for (var i = 0; i < axesDrawInfo.length; i++) {
