@@ -338,7 +338,7 @@ function onImageLoaded() {
         }
       ];
 
-      var axeMargin = 50;
+      var axeMargin = 200;
       var axeWidth = rPreview.width - axeMargin * 2;
       ctx.strokeStyle = "#888888";
       for (var i = 0; i < axesDrawInfo.length; i++) {
@@ -418,7 +418,7 @@ function onImageLoaded() {
         ctx.fillStyle = "#000000";
         ctx.font = "20px sans-serif";
         ctx.textAlign = "right";
-        ctx.fillText(axesDrawInfo[i]["name0"], axeMargin - 10, yPos + 19);
+        ctx.fillText(axesDrawInfo[i]["name0"], axeMargin - 10, yPos + 20);
 
         ctx.textAlign = "right";
         ctx.fillText(
