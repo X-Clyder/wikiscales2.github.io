@@ -286,6 +286,7 @@ function onImageLoaded() {
       yPos += 70;*/
 
       //Text1
+        var axeMargin = 200;
         ctx.fillStyle = "#000000";
         ctx.font = "bold 30px sans-serif";
         ctx.textAlign = "left";
