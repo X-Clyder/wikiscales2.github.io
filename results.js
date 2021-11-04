@@ -418,7 +418,7 @@ function onImageLoaded() {
         ctx.fillStyle = "#000000";
         ctx.font = "20px sans-serif";
         ctx.textAlign = "left";
-        ctx.fillText(axesDrawInfo[i]["name0"], axeMargin - 30, yPos + 30);
+        ctx.fillText(axesDrawInfo[i]["name0"], axeMargin - 30, yPos + 25);
 
         ctx.textAlign = "right";
         ctx.fillText(
