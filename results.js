@@ -469,4 +469,3 @@ function download_image() {
   link.click();
   document.body.removeChild(link);
 }
-© 2021 GitHub, Inc.
