@@ -404,7 +404,7 @@ function onImageLoaded() {
           );
         }
 
-        ctx.drawImage(
+        /*ctx.drawImage(
           images[axesDrawInfo[i]["key"] + "0"],
           axeMargin - 73,
           yPos - 27
@@ -413,7 +413,7 @@ function onImageLoaded() {
           images[axesDrawInfo[i]["key"] + "1"],
           rPreview.width - axeMargin + 73 - 86,
           yPos - 27
-        );
+        );*/
 
         ctx.fillStyle = "#000000";
         ctx.font = "0px sans-serif";
@@ -427,7 +427,7 @@ function onImageLoaded() {
           yPos - 6
         );
 
-        yPos += 50;
+        yPos += 30;
       }
 
       var xShift = 0;
