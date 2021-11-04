@@ -427,7 +427,7 @@ function onImageLoaded() {
           yPos - 6
         );
 
-        yPos += 33;
+        yPos += 34;
       }
 
       var xShift = 0;
