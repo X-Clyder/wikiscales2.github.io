@@ -402,7 +402,7 @@ function onImageLoaded() {
         yPos += 34;
       }
     
-    <br><br>
+    //<br><br>
     //==================================
     //Axes2
       var axesDrawInfo = [
