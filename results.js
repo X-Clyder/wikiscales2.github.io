@@ -344,11 +344,11 @@ function onImageLoaded() {
       for (var i = 0; i < axesDrawInfo.length; i++) {
         var negativeValue = getQueryVariable(axesDrawInfo[i]["key"] + "0");
         var positiveValue = getQueryVariable(axesDrawInfo[i]["key"] + "1");
-        var neutralValue = 1 - negativeValue - positiveValue;
+        //var neutralValue = 1 - negativeValue - positiveValue;
 
         var negSize = axeWidth * negativeValue;
         var posSize = axeWidth * positiveValue;
-        var ntrSize = axeWidth * neutralValue;
+        //var ntrSize = axeWidth * neutralValue;
 
         ctx.beginPath();
         ctx.rect(0.5 + axeMargin + negSize, 0.5 + yPos, ntrSize, 30);
@@ -393,7 +393,7 @@ function onImageLoaded() {
           );
         }
 
-        if (ntrSize > 40) {
+        /*if (ntrSize > 40) {
           ctx.fillStyle = "#888888";
           ctx.font = "20px sans-serif";
           ctx.textAlign = "center";
@@ -402,7 +402,7 @@ function onImageLoaded() {
             axeMargin + negSize + ntrSize / 2,
             yPos + 23
           );
-        }
+        }*/
 
         ctx.drawImage(
           images[axesDrawInfo[i]["key"] + "0"],
