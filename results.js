@@ -297,12 +297,12 @@ function onImageLoaded() {
         ctx.fillText(["Демократизм"], axeMargin - 60, yPos + 21);
         ctx.fillStyle = "#000000";
         ctx.font = "bold 30px sans-serif";
-        ctx.textAlign = "center";
-        ctx.fillText(["s."], axeMargin - 60, yPos + 21);
+        ctx.textAlign = "left";
+        ctx.fillText(["s."], axeMargin - 110, yPos + 21);
         ctx.fillStyle = "#1fad8a";
         ctx.font = "bold 30px sans-serif";
-        ctx.textAlign = "right";
-        ctx.fillText(["Авторитаризм"], axeMargin - 60, yPos + 21);
+        ctx.textAlign = "left";
+        ctx.fillText(["Авторитаризм"], axeMargin - 160, yPos + 21);
 
         yPos += 34;
       //==================================
