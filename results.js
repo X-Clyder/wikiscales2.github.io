@@ -285,6 +285,14 @@ function onImageLoaded() {
       ctx.fillText(generatedSlogan, rPreview.width / 2.0, yPos + 30);
       yPos += 70;*/
 
+      //Text1
+        ctx.fillStyle = "#000000";
+        ctx.font = "bold 30px sans-serif";
+        ctx.textAlign = "left";
+        ctx.fillText(["Демократизм vs. Авторитаризм"], axeMargin - 60, yPos + 21);
+
+        yPos += 34;
+      //==================================
       //Axes1
       var axesDrawInfo = [
         {
@@ -408,7 +416,7 @@ function onImageLoaded() {
         ctx.fillStyle = "#000000";
         ctx.font = "bold 30px sans-serif";
         ctx.textAlign = "left";
-        ctx.fillText(["Свобода vs. Цензура"], axeMargin - 40, yPos + 21);
+        ctx.fillText(["Свобода vs. Цензура"], axeMargin - 60, yPos + 21);
 
         yPos += 34;
     //==================================
