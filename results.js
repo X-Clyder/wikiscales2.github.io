@@ -278,12 +278,12 @@ function onImageLoaded() {
 
       yPos += 48;
        
-      //Slogan
+      /*//Slogan
       ctx.fillStyle = "#000000";
       ctx.font = "25px sans-serif";
       ctx.textAlign = "center";
       ctx.fillText(generatedSlogan, rPreview.width / 2.0, yPos + 30);
-      yPos += 70;
+      yPos += 70;*/
 
       //Axes
       var axesDrawInfo = [
