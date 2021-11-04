@@ -376,7 +376,7 @@ function onImageLoaded() {
           ctx.font = "20px sans-serif";
           ctx.textAlign = "right";
           ctx.fillText(
-            //Math.round(negativeValue * 100) + "%",
+            Math.round(negativeValue * 100) + "%",
             axeMargin + negSize - 5,
             yPos + 23
           );
@@ -387,7 +387,7 @@ function onImageLoaded() {
           ctx.font = "20px sans-serif";
           ctx.textAlign = "left";
           ctx.fillText(
-            //Math.round(positiveValue * 100) + "%",
+            Math.round(positiveValue * 100) + "%",
             axeMargin + negSize + ntrSize + 5,
             yPos + 23
           );
@@ -398,7 +398,7 @@ function onImageLoaded() {
           ctx.font = "20px sans-serif";
           ctx.textAlign = "center";
           ctx.fillText(
-            //Math.round(neutralValue * 100) + "%",
+            Math.round(neutralValue * 100) + "%",
             axeMargin + negSize + ntrSize / 2,
             yPos + 23
           );
