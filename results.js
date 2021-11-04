@@ -241,10 +241,10 @@ function onImageLoaded() {
 
     ctx.beginPath();
     ctx.rect(0, 0, rPreview.width, rPreview.height);
-    ctx.fillStyle = "#de9797";
+    ctx.fillStyle = "#ebebeb";
     ctx.fill();
 
-    var yPos = 0;
+    var yPos = 20;
     
       //Logo
       ctx.beginPath();
@@ -255,12 +255,12 @@ function onImageLoaded() {
       ctx.fillStyle = "#ffffff";
       ctx.font = "bold 25px sans-serif";
       ctx.textAlign = "left";
-      ctx.fillText("WikiScales2", 10, 30);
+      ctx.fillText("WikiScales", 10, 30);
 
       ctx.fillStyle = "#ffffff";
       ctx.font = "bold 15px sans-serif";
       ctx.textAlign = "right";
-      ctx.fillText("wikiscales2.github.io", rPreview.width - 10, 27);
+      ctx.fillText("wikiscales.github.io", rPreview.width - 10, 27);
 
       yPos += 48;
        
@@ -272,39 +272,156 @@ function onImageLoaded() {
       yPos += 70;
 
       //Axes
+      var axesDrawInfo = [
+        {
+          key: "c",
+          color0: "#cc0000",
+          color1: "#1fad8a",
+          name0: "Демократизм",
+          name1: "Авторитаризм"
+        },
+        {
+          key: "j",
+          color0: "#25afd9",
+          color1: "#D23A22",
+          name0: "Свобода слова",
+          name1: "Цензура"
+        },
+        {
+          key: "s",
+          color0: "#DC2E51",
+          color1: "#ccc914",
+          name0: "Коллективизм",
+          name1: "Работа в одиночку"
+        },
+        {
+          key: "b",
+          color0: "#34b634",
+          color1: "#916021",
+          name0: "Реабилитизм",
+          name1: "Порядок и дисциплина"
+        },
+        {
+          key: "p",
+          color0: "#7889cf",
+          color1: "#7831eb",
+          name0: "Вики-скептицизм",
+          name1: "Прогрессивизм"
+        },
+        {
+          key: "m",
+          color0: "#d69022",
+          color1: "#3cbaad",
+          name0: "Изоляционизм",
+          name1: "Глобализм"
+        },
+        {
+          key: "t",
+          color0: "#912a34",
+          color1: "#65962f",
+          name0: "Автономизм",
+          name1: "Унионизм"
+        }
+      ];
+
+      var axeMargin = 100;
+      var axeWidth = rPreview.width - axeMargin * 2;
+      ctx.strokeStyle = "#888888";
+      for (var i = 0; i < axesDrawInfo.length; i++) {
+        var negativeValue = getQueryVariable(axesDrawInfo[i]["key"] + "0");
+        var positiveValue = getQueryVariable(axesDrawInfo[i]["key"] + "1");
+        var neutralValue = 1 - negativeValue - positiveValue;
+
+        var negSize = axeWidth * negativeValue;
+        var posSize = axeWidth * positiveValue;
+        var ntrSize = axeWidth * neutralValue;
+
+        ctx.beginPath();
+        ctx.rect(0.5 + axeMargin + negSize, 0.5 + yPos, ntrSize, 30);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(0.5 + axeMargin, 0.5 + yPos, negSize, 30);
+        ctx.fillStyle = axesDrawInfo[i]["color0"];
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(
+          0.5 + rPreview.width - axeMargin - posSize,
+          0.5 + yPos,
+          posSize,
+          30
+        );
+        ctx.fillStyle = axesDrawInfo[i]["color1"];
+        ctx.fill();
+        ctx.stroke();
+
+        if (negSize > 40) {
+          ctx.fillStyle = "#ffffff";
+          ctx.font = "20px sans-serif";
+          ctx.textAlign = "right";
+          ctx.fillText(
+            Math.round(negativeValue * 100) + "%",
+            axeMargin + negSize - 5,
+            yPos + 23
+          );
+        }
+
+        if (posSize > 40) {
+          ctx.fillStyle = "#ffffff";
+          ctx.font = "20px sans-serif";
+          ctx.textAlign = "left";
+          ctx.fillText(
+            Math.round(positiveValue * 100) + "%",
+            axeMargin + negSize + ntrSize + 5,
+            yPos + 23
+          );
+        }
+
+        if (ntrSize > 40) {
+          ctx.fillStyle = "#888888";
+          ctx.font = "20px sans-serif";
+          ctx.textAlign = "center";
+          ctx.fillText(
+            Math.round(neutralValue * 100) + "%",
+            axeMargin + negSize + ntrSize / 2,
+            yPos + 23
+          );
+        }
+
+        ctx.drawImage(
+          images[axesDrawInfo[i]["key"] + "0"],
+          axeMargin - 73,
+          yPos - 27
+        );
+        ctx.drawImage(
+          images[axesDrawInfo[i]["key"] + "1"],
+          rPreview.width - axeMargin + 73 - 86,
+          yPos - 27
+        );
+
+        ctx.fillStyle = "#000000";
+        ctx.font = "16px sans-serif";
+        ctx.textAlign = "left";
+        ctx.fillText(axesDrawInfo[i]["name0"], axeMargin + 8, yPos - 6);
+
+        ctx.textAlign = "right";
+        ctx.fillText(
+          axesDrawInfo[i]["name1"],
+          rPreview.width - axeMargin - 8,
+          yPos - 6
+        );
+
+        yPos += 100;
+      }
 
       var xShift = 0;
       var numBonus = 0;
       for (var b in bonus) {
         value = getQueryVariable(b);
         if (value > bonus[b]) {
-          //numBonus++;
-        }
-      }
-      
-      var yPos = 92;
-      for (var b in bonus) {
-        value = getQueryVariable(b);
-        if (value > bonus[b]) {
-          ctx.drawImage(
-            images[b],
-            rPreview.width / 22 - 40,
-            //yPos - 50
-          );
-          yPos += 240;
-        }
-      }
-    }
-  }
-
-//почти готово
-/*
-var xShift = 0;
-      var numBonus = 0;
-      for (var b in bonus) {
-        value = getQueryVariable(b);
-        if (value > bonus[b]) {
-          //numBonus++;
+          numBonus++;
         }
       }
 
@@ -313,32 +430,14 @@ var xShift = 0;
         if (value > bonus[b]) {
           ctx.drawImage(
             images[b],
-            rPreview.width / 22 + xShift - 40,
-            yPos - 50
+            rPreview.width / 2 - ((numBonus - 1) * 100) / 2 + xShift - 43,
+            yPos - 27
           );
-          xShift += 50;
-          yPos += 100;
+          xShift += 100;
         }
       }
     }
   }
-  */
-
-/*
-for (var b in bonus) {
-        value = getQueryVariable(b);
-        if (value > bonus[b]) {
-          ctx.drawImage(
-            images[b],
-            rPreview.width / 2 - ((numBonus - 1) * 200) / 2 + xShift - 40,
-            yPos - 50
-          );
-          xShift += 50;
-        }
-      }
-    }
-  }
-  */
 
 for (var b in images) {
   var src = images[b];
@@ -351,8 +450,9 @@ function download_image() {
   var canvas = document.getElementById("generatedResults");
   var link = document.createElement("a");
   link.href = canvas.toDataURL();
-  link.download = `WikiScales2_Results_${+new Date()}.png`;
+  link.download = `WikiScales_Results_${+new Date()}.png`;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 }
+© 2021 GitHub, Inc.
