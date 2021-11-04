@@ -31,7 +31,12 @@ var questions = [
         value: 3
       }
     ],
-    valuesNo: []
+    valuesNo: [
+      {
+        axis: "c0",
+        value: 3
+      }
+    ]
   },
   {
     question: "123.",
@@ -46,7 +51,12 @@ var questions = [
         value: 3
       }
     ],
-    valuesNo: []
+    valuesNo: [
+      {
+        axis: "j1",
+        value: 3
+      }
+    ]
   }
 ];
 
