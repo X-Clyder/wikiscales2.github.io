@@ -291,50 +291,50 @@ function onImageLoaded() {
           key: "c",
           color0: "#cc0000",
           color1: "#1fad8a",
-          name0: "Демократизм",
-          name1: "Авторитаризм"
+          name0: "1)",
+          name1: ""
         },
         {
           key: "j",
-          color0: "#25afd9",
-          color1: "#D23A22",
-          name0: "Свобода слова",
-          name1: "Цензура"
+          color0: "#cc0000",
+          color1: "#1fad8a",
+          name0: "2",
+          name1: ""
         },
         {
           key: "s",
-          color0: "#DC2E51",
-          color1: "#ccc914",
-          name0: "Коллективизм",
-          name1: "Работа в одиночку"
+          color0: "#cc0000",
+          color1: "#1fad8a",
+          name0: "3",
+          name1: ""
         },
         {
           key: "b",
-          color0: "#34b634",
-          color1: "#916021",
-          name0: "Реабилитизм",
-          name1: "Порядок и дисциплина"
+          color0: "#cc0000",
+          color1: "#1fad8a",
+          name0: "4",
+          name1: ""
         },
         {
           key: "p",
-          color0: "#7889cf",
-          color1: "#7831eb",
-          name0: "Вики-скептицизм",
-          name1: "Прогрессивизм"
+          color0: "#cc0000",
+          color1: "#1fad8a",
+          name0: "5",
+          name1: ""
         },
         {
           key: "m",
-          color0: "#d69022",
-          color1: "#3cbaad",
-          name0: "Изоляционизм",
-          name1: "Глобализм"
+          color0: "#cc0000",
+          color1: "#1fad8a",
+          name0: "6",
+          name1: ""
         },
         {
           key: "t",
-          color0: "#912a34",
-          color1: "#65962f",
-          name0: "Автономизм",
-          name1: "Унионизм"
+          color0: "#cc0000",
+          color1: "#1fad8a",
+          name0: "7",
+          name1: ""
         }
       ];
 
@@ -416,7 +416,7 @@ function onImageLoaded() {
         );*/
 
         ctx.fillStyle = "#000000";
-        ctx.font = "0px sans-serif";
+        ctx.font = "16px sans-serif";
         ctx.textAlign = "left";
         ctx.fillText(axesDrawInfo[i]["name0"], axeMargin + 8, yPos - 6);
 
@@ -427,7 +427,7 @@ function onImageLoaded() {
           yPos - 6
         );
 
-        yPos += 30;
+        yPos += 40;
       }
 
       var xShift = 0;
