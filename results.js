@@ -373,7 +373,7 @@ function onImageLoaded() {
 
         if (negSize > 40) {
           ctx.fillStyle = "#ffffff";
-          ctx.font = "20px sans-serif";
+          ctx.font = "25px sans-serif";
           ctx.textAlign = "right";
           ctx.fillText(
             Math.round(negativeValue * 100) + "%",
@@ -384,7 +384,7 @@ function onImageLoaded() {
 
         if (posSize > 40) {
           ctx.fillStyle = "#ffffff";
-          ctx.font = "20px sans-serif";
+          ctx.font = "25px sans-serif";
           ctx.textAlign = "left";
           ctx.fillText(
             Math.round(positiveValue * 100) + "%",
@@ -395,7 +395,7 @@ function onImageLoaded() {
 
         if (ntrSize > 40) {
           ctx.fillStyle = "#888888";
-          ctx.font = "20px sans-serif";
+          ctx.font = "25px sans-serif";
           ctx.textAlign = "center";
           ctx.fillText(
             Math.round(neutralValue * 100) + "%",
