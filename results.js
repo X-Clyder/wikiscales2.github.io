@@ -404,19 +404,15 @@ function onImageLoaded() {
     
     yPos += 20;
     //Text2
-      var axesDrawInfo = [
-        {
-          name0: "Свобода vs. Цензура",
-        }
-      ];
+        var name0 = "Свобода vs. Цензура";
         ctx.fillStyle = "#000000";
         ctx.font = "20px sans-serif";
         ctx.textAlign = "right";
-        ctx.fillText(axesDrawInfo[i]["name0"], axeMargin - 10, yPos + 21);
+        ctx.fillText(["name0"], axeMargin - 10, yPos + 21);
 
         ctx.textAlign = "right";
         ctx.fillText(
-          axesDrawInfo[i]["name1"],
+          ["name1"],
           rPreview.width - axeMargin - 8,
           yPos - 6
         );
