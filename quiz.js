@@ -24,17 +24,17 @@ var questions = [
     valuesYes: [
       {
         axis: "delete",
-        value: 3
+        value: 2
       },
       {
         axis: "meta",
-        value: 3
+        value: 2
       }
     ],
     valuesNo: [
       {
         axis: "c0",
-        value: 3
+        value: 2
       }
     ]
   },
@@ -44,17 +44,17 @@ var questions = [
     valuesYes: [
       {
         axis: "revo",
-        value: 3
+        value: 2
       },
       {
         axis: "expan",
-        value: 3
+        value: 2
       }
     ],
     valuesNo: [
       {
         axis: "j1",
-        value: 3
+        value: 2
       }
     ]
   }
