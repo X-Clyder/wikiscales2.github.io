@@ -418,7 +418,7 @@ function onImageLoaded() {
         ctx.fillStyle = "#000000";
         ctx.font = "20px sans-serif";
         ctx.textAlign = "right";
-        ctx.fillText(axesDrawInfo[i]["name0"], axeMargin - 10, yPos + 20);
+        ctx.fillText(axesDrawInfo[i]["name0"], axeMargin - 10, yPos + 21);
 
         ctx.textAlign = "right";
         ctx.fillText(
@@ -427,7 +427,7 @@ function onImageLoaded() {
           yPos - 6
         );
 
-        yPos += 35;
+        yPos += 33;
       }
 
       var xShift = 0;
