@@ -297,7 +297,7 @@ function onImageLoaded() {
         ctx.fillText(["Демократизм"], axeMargin + 50, yPos + 21);
         ctx.fillStyle = "#000000";
         ctx.font = "bold 30px sans-serif";
-        ctx.textAlign = "left";
+        ctx.textAlign = "center";
         ctx.fillText(["vs."], axeMargin + 300, yPos + 21);
         ctx.fillStyle = "#1fad8a";
         ctx.font = "bold 30px sans-serif";
