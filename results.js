@@ -501,10 +501,10 @@ function onImageLoaded() {
         ctx.fillText(
           axesDrawInfo[i]["name1"],
           rPreview.width - axeMargin - 8,
-          yPos - 6
+          /* yPos - 6 */
         );
 
-        yPos += 34;
+        /* yPos += 34; */
       }
 
       /* МЕДАЛИ */
