@@ -522,7 +522,7 @@ function onImageLoaded() {
       for (var b in bonus) {
         value = getQueryVariable(b);
         if (value > bonus[b]) {
-          if (imagesPerRow === 0) {
+          if (numBonus % imagesPerRow === 0 && numBonus == 0) {
             // Начинаем новую строку
             imagesPerRow = 5;
             yShift += 100; // Можете использовать другое значение для вертикального смещения
