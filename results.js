@@ -508,7 +508,7 @@ function onImageLoaded() {
       }
 
       /* МЕДАЛИ */
-      var xShift = 0;
+      var xShift = 100;
       var yShift = 0;
       var numBonus = 0;
       var imagesPerRow = 5;
@@ -518,7 +518,7 @@ function onImageLoaded() {
         if (value > bonus[b]) {
           if (numBonus > 0 && numBonus % imagesPerRow === 0) {
             // Начинаем новую строку
-            yShift += 10;
+            yShift += 200;
             xShift = 0;
           }
 
