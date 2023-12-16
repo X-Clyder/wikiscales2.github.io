@@ -510,6 +510,7 @@ function onImageLoaded() {
       /* МЕДАЛИ */
       var xShift = 0;
       var yShift = 0;
+      var numBonus = 0;
       var imagesPerRow = 5;
 
       for (var b in bonus) {
