@@ -524,6 +524,7 @@ function onImageLoaded() {
         if (value > bonus[b]) {
           if (imagesPerRow === 0) {
             // Начинаем новую строку
+            imagesPerRow = 5;
             yShift += 100; // Можете использовать другое значение для вертикального смещения
             xShift = 0; // Сбрасываем горизонтальное смещение
           }
