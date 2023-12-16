@@ -509,7 +509,9 @@ function onImageLoaded() {
 
       /* МЕДАЛИ */
       var xShift = 0;
+      var yShift = 0;
       var numBonus = 0;
+      var imagesPerRow = 5;
       for (var b in bonus) {
         value = getQueryVariable(b);
         if (value > bonus[b]) {
@@ -520,12 +522,18 @@ function onImageLoaded() {
       for (var b in bonus) {
         value = getQueryVariable(b);
         if (value > bonus[b]) {
+          if (numBonus % imagesPerRow === 0 && numBonus !== 0) {
+            // Начинаем новую строку
+            yShift += 100; // Можете использовать другое значение для вертикального смещения
+            xShift = 0; // Сбрасываем горизонтальное смещение
+      }
           ctx.drawImage(
-            images[b],
-            rPreview.width / 2 - ((numBonus - 1) * 100) / 2 + xShift - 43,
-            yPos - 27
-          );
+          images[b],
+          rPreview.width / 2 - ((imagesPerRow - 1) * 100) / 2 + xShift - 43,
+          yPos - 27 + yShift
+        );
           xShift += 100;
+          numBonus++;
         }
       }
     }
