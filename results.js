@@ -508,7 +508,7 @@ function onImageLoaded() {
       }
 
       /* МЕДАЛИ */
-      var xShift = 100;
+      var xShift = 0;
       var yShift = 0;
       var numBonus = 0;
       var imagesPerRow = 5;
@@ -519,7 +519,7 @@ function onImageLoaded() {
           if (numBonus > 0 && numBonus % imagesPerRow === 0) {
             // Начинаем новую строку
             yShift += 200;
-            xShift = 0;
+            xShift += 100;
           }
 
           ctx.drawImage(
