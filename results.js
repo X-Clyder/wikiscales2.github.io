@@ -511,7 +511,7 @@ function onImageLoaded() {
       var xShift = 0;
       var yShift = 0;
       var numBonus = 0;
-      var imagesPerRow = 5;
+      var imagesPerRow = 6;
       for (var b in bonus) {
         value = getQueryVariable(b);
         if (value > bonus[b]) {
@@ -529,7 +529,7 @@ function onImageLoaded() {
           }
           ctx.drawImage(
             images[b],
-            rPreview.width - ((imagesPerRow - 1) * 100) / 2 + xShift - 200,
+            rPreview.width / 2 - ((imagesPerRow - 1) * 100) / 2 + xShift - 200,
             yPos - 100 + yShift
           );
           xShift += 100;
