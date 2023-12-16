@@ -531,7 +531,7 @@ function onImageLoaded() {
             images[b],
             rPreview.width / 2 - ((imagesPerRow - 1) * 100) / 2 + xShift - 200,
             yPos - 100 + yShift
-            if (imagesPerRow == 0) {
+            if (imagesPerRow === 0) {
               imagesPerRow = 5;
             }
           );
