@@ -508,18 +508,19 @@ function onImageLoaded() {
       }
 
       /* МЕДАЛИ */
-      var xShift = 100;
+      var xShift = 0;
       var yShift = 0;
       var numBonus = 0;
       var imagesPerRow = 5;
+      var itemSpacing = 60; // Расстояние между каждым элементом
 
       for (var b in bonus) {
         value = getQueryVariable(b);
         if (value > bonus[b]) {
           if (numBonus > 0 && numBonus % imagesPerRow === 0) {
             // Начинаем новую строку
-            yShift += 200;
-            xShift = 100;
+            yShift += itemSpacing;
+            xShift = 0;
           }
 
           ctx.drawImage(
@@ -528,7 +529,7 @@ function onImageLoaded() {
             yPos - 100 + yShift
           );
 
-          xShift += 100;
+          xShift += 100 + itemSpacing; // Увеличиваем смещение на 100 (ширина изображения) и itemSpacing
           numBonus++;
         }
       }
