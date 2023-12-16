@@ -23,12 +23,52 @@ var questions = [
     answer: 0,
     valuesYes: [
       {
+        axis: "inc",
+        value: 2
+      },
+      {
         axis: "delete",
         value: 2
       },
       {
-        axis: "meta",
+        axis: "even",
+        value: 3
+      },
+      {
+        axis: "imm",
+        value: 3
+      },
+      {
+        axis: "merge",
         value: 2
+      },
+      {
+        axis: "separa",
+        value: 2
+      },
+      {
+        axis: "meta",
+        value: 3
+      },
+      {
+        axis: "exo",
+        value: 3
+      },
+      {
+        axis: "mono",
+        value: 3
+      },
+      {
+        axis: "poly",
+        value: 3
+      },
+      {
+        axis: "ref",
+        value: 3
+      },
+      {
+        axis: "react",
+        value: 3
       }
     ],
     valuesNo: [
