@@ -518,8 +518,8 @@ function onImageLoaded() {
         if (value > bonus[b]) {
           if (numBonus > 0 && numBonus % imagesPerRow === 0) {
             // Начинаем новую строку
-            yShift += 100;
-            xShift = 100;
+            yShift += 10;
+            xShift = 0;
           }
 
           ctx.drawImage(
