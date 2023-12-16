@@ -434,7 +434,7 @@ function onImageLoaded() {
         yPos += 34;
     //==================================
     //Axes2
-    /*
+    
       var axesDrawInfo = [
         {
           key: "b",
@@ -543,7 +543,7 @@ function onImageLoaded() {
           yPos - 27
         );*/
 
-        ctx.fillStyle = "#000000";
+        /* ctx.fillStyle = "#000000";
         ctx.font = "20px sans-serif";
         ctx.textAlign = "right";
         ctx.fillText(axesDrawInfo[i]["name0"], axeMargin - 10, yPos + 21);
@@ -556,8 +556,9 @@ function onImageLoaded() {
         );
 
         yPos += 34;
-      }
+      } */
 
+      /* МЕДАЛИ */
       var xShift = 0;
       var numBonus = 0;
       for (var b in bonus) {
