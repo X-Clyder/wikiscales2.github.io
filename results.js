@@ -435,7 +435,7 @@ function onImageLoaded() {
     //==================================
     //Axes2
     
-      /* var axesDrawInfo = [
+      var axesDrawInfo = [
         {
           key: "b",
           color0: "#cc0000",
@@ -530,7 +530,7 @@ function onImageLoaded() {
             axeMargin + negSize + ntrSize / 2,
             yPos + 23
           );
-        } */
+        }
 
         /*ctx.drawImage(
           images[axesDrawInfo[i]["key"] + "0"],
