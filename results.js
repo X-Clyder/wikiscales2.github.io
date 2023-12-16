@@ -529,11 +529,11 @@ function onImageLoaded() {
           }
           ctx.drawImage(
             images[b],
-            rPreview.width / 2 - ((imagesPerRow - 1) * 100) / 2 + xShift - 43,
+            rPreview.width / 2 - ((imagesPerRow - 1) * 100) / 2 + xShift - 80,
             yPos - 27 + yShift
           );
           xShift += 100;
-          /* numBonus++; */
+          numBonus++;
         }
       }
     }
