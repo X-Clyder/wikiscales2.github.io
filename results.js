@@ -519,7 +519,7 @@ function onImageLoaded() {
         if (value > bonus[b]) {
           if (numBonus > 0 && numBonus % imagesPerRow === 0) {
             // Начинаем новую строку
-            yShift += itemSpacing;
+            yShift += 100 + itemSpacing; // Увеличиваем смещение на 100 (высота изображения) и itemSpacing
             xShift = 0;
           }
 
