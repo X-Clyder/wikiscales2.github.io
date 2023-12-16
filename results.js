@@ -307,7 +307,7 @@ function onImageLoaded() {
         yPos += 34;
       //==================================
       //Axes1
-      var axesDrawInfo = [
+      /* var axesDrawInfo = [
         {
           key: "c",
           color0: "#cc0000",
@@ -329,7 +329,7 @@ function onImageLoaded() {
           name0: "3",
           name1: ""
         }
-      ];
+      ]; */
 
       var axeMargin = 200;
       var axeWidth = rPreview.width - axeMargin * 2;
