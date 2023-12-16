@@ -434,7 +434,7 @@ function onImageLoaded() {
         yPos += 34;
     //==================================
     //Axes2
-    
+    /*
       var axesDrawInfo = [
         {
           key: "b",
@@ -530,7 +530,7 @@ function onImageLoaded() {
             axeMargin + negSize + ntrSize / 2,
             yPos + 23
           );
-        }
+        } */
 
         /*ctx.drawImage(
           images[axesDrawInfo[i]["key"] + "0"],
