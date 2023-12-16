@@ -306,8 +306,8 @@ function onImageLoaded() {
 
         yPos += 34;
       //==================================
-      //Axes1
-      /* var axesDrawInfo = [
+      //Axes1, var axesDrawInfo = [ НЕ КОММЕНТИТЬ
+      var axesDrawInfo = [
         {
           key: "c",
           color0: "#cc0000",
@@ -329,9 +329,9 @@ function onImageLoaded() {
           name0: "3",
           name1: ""
         }
-      ]; */
+      ];
 
-      var axeMargin = 200;
+      /* var axeMargin = 200;
       var axeWidth = rPreview.width - axeMargin * 2;
       ctx.strokeStyle = "#888888";
       for (var i = 0; i < axesDrawInfo.length; i++) {
@@ -362,7 +362,7 @@ function onImageLoaded() {
         );
         ctx.fillStyle = axesDrawInfo[i]["color1"];
         ctx.fill();
-        ctx.stroke();
+        ctx.stroke(); */
 
         if (negSize > 40) {
           ctx.fillStyle = "#ffffff";
