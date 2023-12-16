@@ -307,31 +307,9 @@ function onImageLoaded() {
         yPos += 34;
       //==================================
       //Axes1, var axesDrawInfo = [ НЕ КОММЕНТИТЬ
-      var axesDrawInfo = [
-        {
-          key: "c",
-          color0: "#cc0000",
-          color1: "#1fad8a",
-          name0: "1) Голосования",
-          name1: ""
-        },
-        {
-          key: "j",
-          color0: "#cc0000",
-          color1: "#1fad8a",
-          name0: "2",
-          name1: ""
-        },
-        {
-          key: "s",
-          color0: "#cc0000",
-          color1: "#1fad8a",
-          name0: "3",
-          name1: ""
-        }
-      ];
+      var axesDrawInfo = [];
 
-      /* var axeMargin = 200;
+      var axeMargin = 200;
       var axeWidth = rPreview.width - axeMargin * 2;
       ctx.strokeStyle = "#888888";
       for (var i = 0; i < axesDrawInfo.length; i++) {
@@ -362,7 +340,7 @@ function onImageLoaded() {
         );
         ctx.fillStyle = axesDrawInfo[i]["color1"];
         ctx.fill();
-        ctx.stroke(); */
+        ctx.stroke();
 
         if (negSize > 40) {
           ctx.fillStyle = "#ffffff";
@@ -435,36 +413,7 @@ function onImageLoaded() {
     //==================================
     //Axes2
     
-      var axesDrawInfo = [
-        {
-          key: "b",
-          color0: "#cc0000",
-          color1: "#1fad8a",
-          name0: "4",
-          name1: ""
-        },
-        {
-          key: "p",
-          color0: "#cc0000",
-          color1: "#1fad8a",
-          name0: "5",
-          name1: ""
-        },
-        {
-          key: "m",
-          color0: "#cc0000",
-          color1: "#1fad8a",
-          name0: "6",
-          name1: ""
-        },
-        {
-          key: "t",
-          color0: "#cc0000",
-          color1: "#1fad8a",
-          name0: "7",
-          name1: ""
-        }
-      ];
+      var axesDrawInfo = [];
 
       var axeMargin = 200;
       var axeWidth = rPreview.width - axeMargin * 2;
