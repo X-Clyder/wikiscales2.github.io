@@ -479,7 +479,7 @@ function onImageLoaded() {
       var xShift = -50;
       var yShift = 60;
       var numBonus = 0;
-      var imagesPerRow = 1;
+      var imagesPerRow = 5;
       var itemSpacing = 80; // Расстояние между каждым элементом
 
       for (var b in bonus) {
