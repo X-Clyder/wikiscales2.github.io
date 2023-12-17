@@ -81,20 +81,20 @@ function setBonus(name, value, limit) {
 var axes = ["c", "b", "p", "m", "s", "j", "t"];
 
 var bonus = {
-  inc: 0.9,
+  inc: 0,
   delete: 0,
-  even: 0.2,
-  imm: 0.4,
-  merge: 0.6,
-  separa: 0.8,
-  meta: 1,
-  exo: 1.5,
-  mono: 2,
-  poly: 0.5,
-  ref: 0.5,
-  react: 0.5,
-  revo: 0.5,
-  expan: 0.5
+  even: 0,
+  imm: 0,
+  merge: 0,
+  separa: 0,
+  meta: 0,
+  exo: 0,
+  mono: 0,
+  poly: 0,
+  ref: 0,
+  react: 0,
+  revo: 0,
+  expan: 0
 };
 
 var characteristics = [];
