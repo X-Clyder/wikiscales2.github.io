@@ -192,9 +192,7 @@ if (!bonusEnabled) {
 }
 
 var images = {
-  inc: function(value) {
-    return value < 0.5 ? "/images/1.png" : "/images/2.png";
-  },
+  inc: "/images/1.png",
   delete: "/images/2.png",
   even: "/images/3.png",
   imm: "/images/4.png",
@@ -209,6 +207,24 @@ var images = {
   revo: "/images/13.png",
   expan: "/images/14.png",
 };
+
+// Функция для выбора изображения в зависимости от значения параметра
+function chooseImage(param) {
+  var value = images[param];
+  if (value < 0.5) {
+    return images[param];
+  } else {
+    // Возвращаем другое изображение в зависимости от вашей логики
+    // Например, можно добавить префикс '_alt' к имени изображения
+    return images[param].replace('1.png', '2.png');
+  }
+}
+
+// Проходим по всем параметрам и выводим результат
+for (var param in images) {
+  var selectedImage = chooseImage(param);
+  console.log(param + ": " + selectedImage);
+}
 
 var numImageLoaded = 0;
 
