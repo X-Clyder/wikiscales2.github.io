@@ -81,12 +81,12 @@ function setBonus(name, value, limit) {
 var axes = ["c", "b", "p", "m", "s", "j", "t"];
 
 var bonus = {
-  inc: 0.5,
-  delete: 0.5,
-  even: 0.5,
-  imm: 0.5,
-  merge: 0.5,
-  separa: 0.5,
+  inc: 0.9,
+  delete: 0.9,
+  even: 0.9,
+  imm: 0.9,
+  merge: 1,
+  separa: 1,
   meta: 0.5,
   exo: 0.5,
   mono: 0.5,
