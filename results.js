@@ -97,16 +97,8 @@ var bonus = {
   expan: 0.5//2
 };
 
-/* var characteristics = [];
-var axesValues = {
-  c: 0,
-  b: 0,
-  p: 0,
-  m: 0,
-  s: 0,
-  j: 0,
-  t: 0
-}; */
+var characteristics = [];
+var axesValues = {};
 
 var left = 0;
 var right = 0;
@@ -147,17 +139,7 @@ characteristics.sort(function(a, b) {
   return a.value < b.value;
 });
 
-var charSlogan = {
-  b0: "Реабилитация",
-  b1: "Порядок",
-  c0: "Демократия",
-  j0: "Свобода",
-  j1: "Этикет",
-  s0: "Коллектив",
-  s1: "Индивид",
-  t0: "Автономия",
-  t1: "Викисоюз"
-};
+var charSlogan = {};
 
 function getCharacteristic(name, vmin, vmax) {
   for (var k = 0; k < characteristics.length; k++) {
@@ -210,20 +192,6 @@ if (!bonusEnabled) {
 }
 
 var images = {
-  c0: "/images/Демократизм_мал.png",
-  c1: "/images/Авторитаризм_мал.png",
-  j0: "/images/Свобода_мал.png",
-  j1: "/images/Цензура_мал.png",
-  s0: "/images/Коллективизм_мал.png",
-  s1: "/images/Индивидуализм_мал.png",
-  b0: "/images/Реабилитизм_мал.png",
-  b1: "/images/Репрессивизм_мал.png",
-  p0: "/images/Консерватизм_мал.png",
-  p1: "/images/Прогресс_мал.png",
-  m0: "/images/Изоляционизм_мал.png",
-  m1: "/images/Глобализм_мал.png",
-  t0: "/images/Автономизм_мал.png",
-  t1: "/images/Унионизм_мал.png",
   inc: "/images/1.png",
   delete: "/images/2.png",
   even: "/images/3.png",
