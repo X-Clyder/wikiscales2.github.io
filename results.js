@@ -192,7 +192,7 @@ if (!bonusEnabled) {
 }
 
 var images = {
-  inc: "/images/1.png",
+  inc: inc == 0 ? "/images/1.png" : "/images/2.png",
   delete: "/images/2.png",
   even: "/images/3.png",
   imm: "/images/4.png",
@@ -207,12 +207,6 @@ var images = {
   revo: "/images/13.png",
   expan: "/images/14.png",
 };
-
-if (inc > 0.5) {
-  function chooseImage(images) {
-    return images[0].replace('1.png', '2.png');
-  }
-}
 
 var numImageLoaded = 0;
 
