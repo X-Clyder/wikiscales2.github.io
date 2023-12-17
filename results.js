@@ -209,8 +209,8 @@ var images = {
 };
 
 if (inc > 0.5) {
-  var images = {
-    inc: "/images/2.png",
+  function chooseImage(images) {
+    return images[0].replace('1.png', '2.png');
   }
 }
 
