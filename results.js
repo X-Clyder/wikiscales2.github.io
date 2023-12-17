@@ -480,7 +480,7 @@ function onImageLoaded() {
       var yShift = 50;
       var numBonus = 0;
       var imagesPerRow = 5;
-      var itemSpacing = 60; // Расстояние между каждым элементом
+      var itemSpacing = 70; // Расстояние между каждым элементом
 
       for (var b in bonus) {
         value = getQueryVariable(b);
@@ -488,7 +488,7 @@ function onImageLoaded() {
           if (numBonus > 0 && numBonus % imagesPerRow === 0) {
             // Начинаем новую строку
             yShift += 100 + itemSpacing; // Увеличиваем смещение на 100 (высота изображения) и itemSpacing
-            xShift = 0;
+            xShift = -50;
           }
 
           ctx.drawImage(
