@@ -97,7 +97,7 @@ var bonus = {
   expan: 0.5//2
 };
 
-var characteristics = [];
+/* var characteristics = [];
 var axesValues = {
   c: 0,
   b: 0,
@@ -106,7 +106,7 @@ var axesValues = {
   s: 0,
   j: 0,
   t: 0
-};
+}; */
 
 var left = 0;
 var right = 0;
