@@ -10,6 +10,7 @@ body {
   background-color: #2d2d2d;/*ebebeb*/
   display: flex;
   flex-direction: column;
+  color: #ebebeb;
 }
 
 #header {
