@@ -208,21 +208,10 @@ var images = {
   expan: "/images/14.png",
 };
 
-// Функция для выбора изображения в зависимости от значения параметра
-function chooseImage(value) {
-  if (value < 0.5) {
-    return images[b];
-  } else {
-    // Возвращаем другое изображение в зависимости от вашей логики
-    // Например, можно добавить префикс '_alt' к имени изображения
-    return images[b].replace('1.png', '2.png');
+if (inc > 0.5) {
+  var images = {
+    inc: "/images/2.png",
   }
-}
-
-// Проходим по всем параметрам и выводим результат
-for (var value in images) {
-  var selectedImage = chooseImage(param);
-  console.log(param + ": " + selectedImage);
 }
 
 var numImageLoaded = 0;
