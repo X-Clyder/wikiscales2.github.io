@@ -192,7 +192,7 @@ if (!bonusEnabled) {
 }
 
 var images = {
-  inc: value == 1 ? "/images/1.png" : "/images/2.png",
+  inc: value == 1 ? "/images/1.png" : value == 0.75 ? "/images/2.png" : value == 0.5 ? "/images/3.png" : value == 0.25 ? "/images/4.png" : "/images/default.png",
   delete: "/images/2.png",
   even: "/images/3.png",
   imm: "/images/4.png",
