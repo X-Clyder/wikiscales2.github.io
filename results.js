@@ -192,7 +192,11 @@ if (!bonusEnabled) {
 }
 
 var images = {
-  inc: inc < 0.5 ? "/images/1.png" : "/images/2.png",
+  if (inc < 0.5) {
+    inc: "/images/1.png",
+  } else {
+    inc: "/images/2.png",
+  }
   delete: "/images/2.png",
   even: "/images/3.png",
   imm: "/images/4.png",
