@@ -32,11 +32,11 @@ var questions = [
       },
       {
         axis: "even",
-        value: 3
+        value: 2
       },
       {
         axis: "imm",
-        value: 3
+        value: 2
       },
       {
         axis: "merge",
@@ -48,35 +48,30 @@ var questions = [
       },
       {
         axis: "meta",
-        value: 3
+        value: 2
       },
       {
         axis: "exo",
-        value: 3
+        value: 2
       },
       {
         axis: "mono",
-        value: 3
+        value: 2
       },
       {
         axis: "poly",
-        value: 3
+        value: 2
       },
       {
         axis: "ref",
-        value: 3
+        value: 2
       },
       {
         axis: "react",
-        value: 3
-      }
-    ],
-    valuesNo: [
-      {
-        axis: "c0",
         value: 2
       }
-    ]
+    ],
+    valuesNo: []
   },
   {
     question: "123.",
@@ -91,12 +86,7 @@ var questions = [
         value: 2
       }
     ],
-    valuesNo: [
-      {
-        axis: "j1",
-        value: 2
-      }
-    ]
+    valuesNo: []
   }
 ];
 
