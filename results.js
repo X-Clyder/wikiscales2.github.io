@@ -82,19 +82,19 @@ var axes = ["c", "b", "p", "m", "s", "j", "t"];
 
 var bonus = {
   inc: 0.5,
-  delete: 0.9,//1
+  delete: 0.5,
   even: 0.5,
   imm: 0.5,
   merge: 0.5,
   separa: 0.5,
-  meta: 0.5,//1
+  meta: 0.5,
   exo: 0.5,
   mono: 0.5,
   poly: 0.5,
   ref: 0.5,
   react: 0.5,
-  revo: 0.9,//2
-  expan: 0.5//2
+  revo: 0.5,
+  expan: 0.5
 };
 
 var characteristics = [];
