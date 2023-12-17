@@ -476,7 +476,7 @@ function onImageLoaded() {
       }
 
       /* МЕДАЛИ */
-      var xShift = 50;
+      var xShift = -50;
       var yShift = 50;
       var numBonus = 0;
       var imagesPerRow = 5;
