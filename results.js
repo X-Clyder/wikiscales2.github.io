@@ -192,8 +192,8 @@ if (!bonusEnabled) {
 }
 
 var images = {
-  inc: function(inc) {
-    return inc < 0.5 ? "/images/1.png" : "/images/2.png";
+  inc: function(value) {
+    return value < 0.5 ? "/images/1.png" : "/images/2.png";
   },
   delete: "/images/2.png",
   even: "/images/3.png",
