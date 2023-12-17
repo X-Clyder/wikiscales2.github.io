@@ -369,7 +369,7 @@ function onImageLoaded() {
         yPos += 34;
       }
     
-    yPos += 20;
+    /*yPos += 20;*/
     //Text2
     
         ctx.fillStyle = "#000000";
@@ -377,7 +377,7 @@ function onImageLoaded() {
         ctx.textAlign = "left";
         /*ctx.fillText(["Свобода vs. Цензура"], axeMargin - 60, yPos + 21);*/
 
-        yPos += 34;
+        /*yPos += 34;*/
     //==================================
     //Axes2
     
