@@ -476,8 +476,8 @@ function onImageLoaded() {
       }
 
       /* МЕДАЛИ */
-      var xShift = 0;
-      var yShift = 0;
+      var xShift = 50;
+      var yShift = 50;
       var numBonus = 0;
       var imagesPerRow = 5;
       var itemSpacing = 60; // Расстояние между каждым элементом
