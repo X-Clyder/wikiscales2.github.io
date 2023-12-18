@@ -79,7 +79,7 @@ var questions = [
       }
     ],
     valuesNo: []
-  }
+  },
   {
     question: "123.",
     answer: 0,
