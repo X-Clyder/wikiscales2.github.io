@@ -23,10 +23,6 @@ var questions = [
     answer: 0,
     valuesYes: [
       {
-        axis: "inc",
-        value: 2
-      },
-      {
         axis: "delete",
         value: 2
       },
@@ -73,6 +69,17 @@ var questions = [
     ],
     valuesNo: []
   },
+  {
+    question: "Инклюзионизм.",
+    answer: 0,
+    valuesYes: [
+      {
+        axis: "inc",
+        value: 2
+      }
+    ],
+    valuesNo: []
+  }
   {
     question: "123.",
     answer: 0,
