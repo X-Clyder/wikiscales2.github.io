@@ -81,8 +81,8 @@ function setBonus(name, value, limit) {
 var axes = ["c", "b", "p", "m", "s", "j", "t"];
 
 var bonus = {
-  inc: 0,
-  delete: 0,
+  inc: 0.5,
+  delete: 0.5,
   even: 0,
   imm: 0,
   merge: 0,
