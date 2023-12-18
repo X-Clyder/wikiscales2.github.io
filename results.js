@@ -192,8 +192,8 @@ if (!bonusEnabled) {
 }
 
 var images = {
-  inc: getQueryVariable(variable) == 1 ? "/images/1.png" : getQueryVariable(variable) == 0.75 ? "/images/2.png" : getQueryVariable(variable) == 0.5 ? "/images/3.png" : getQueryVariable(variable) == 0.25 ? "/images/4.png" : "/images/default.png",
-  delete: getQueryVariable(variable) == 1 ? "/images/2.png" : getQueryVariable(variable) == 0.75 ? "/images/3.png" : getQueryVariable(variable) == 0.5 ? "/images/4.png" : getQueryVariable(variable) == 0.25 ? "/images/5.png" : "/images/default.png",
+  inc: getElementById(name) == 1 ? "/images/1.png" : getElementById(name) == 0.75 ? "/images/2.png" : getElementById(name) == 0.5 ? "/images/3.png" : getElementById(name) == 0.25 ? "/images/4.png" : "/images/default.png",
+  delete: getElementById(name) == 1 ? "/images/2.png" : getElementById(name) == 0.75 ? "/images/3.png" : getElementById(name) == 0.5 ? "/images/4.png" : getElementById(name) == 0.25 ? "/images/5.png" : "/images/default.png",
   even: "/images/3.png",
   imm: "/images/4.png",
   merge: "/images/5.png",
