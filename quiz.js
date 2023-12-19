@@ -47,7 +47,7 @@ var questions = [
     answer: 0,
     valuesYes: [
       {
-        axis: "delete",
+        axis: "meta",
         value: 2
       },
       {
@@ -58,11 +58,11 @@ var questions = [
     valuesNo: []
   },
   {
-    question: "Инклюзионизм.",
+    question: "тест.",
     answer: 0,
     valuesYes: [
       {
-        axis: "inc",
+        axis: "even",
         value: 2
       },
       {
