@@ -192,8 +192,8 @@ if (!bonusEnabled) {
 }
 
 var images = {
-  inc: c0 == 1 ? "/images/1.png" : c0 == 0.75 ? "/images/2.png" : c0 == 0.5 ? "/images/3.png" : c0 == 0.25 ? "/images/4.png" : "/images/default.png",
-  delete: c0 == 1 ? "/images/2.png" : c0 == 0.75 ? "/images/3.png" : c0 == 0.5 ? "/images/4.png" : c0 == 0.25 ? "/images/5.png" : "/images/default.png",
+  inc: getQueryVariable(axes[0]) == 1 ? "/images/1.png" : getQueryVariable(axes[0]) == 0.75 ? "/images/2.png" : getQueryVariable(axes[0]) == 0.5 ? "/images/3.png" : getQueryVariable(axes[0]) == 0.25 ? "/images/4.png" : "/images/default.png",
+  delete: getQueryVariable(axes[1]) == 1 ? "/images/2.png" : getQueryVariable(axes[1]) == 0.75 ? "/images/3.png" : getQueryVariable(axes[1]) == 0.5 ? "/images/4.png" : getQueryVariable(axes[1]) == 0.25 ? "/images/5.png" : "/images/default.png",
   even: "/images/3.png",
   imm: "/images/4.png",
   merge: "/images/5.png",
