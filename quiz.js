@@ -49,6 +49,10 @@ var questions = [
       {
         axis: "delete",
         value: 2
+      },
+      {
+        axis: "c0",
+        value: 2
       }
     ],
     valuesNo: []
@@ -59,6 +63,10 @@ var questions = [
     valuesYes: [
       {
         axis: "inc",
+        value: 2
+      },
+      {
+        axis: "b0",
         value: 2
       }
     ],
