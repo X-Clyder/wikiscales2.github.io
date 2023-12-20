@@ -51,7 +51,7 @@ var questions = [
         value: 2
       },
       {
-        axis: "c0",
+        axis: "b0",
         value: 2
       }
     ],
@@ -66,7 +66,7 @@ var questions = [
         value: 2
       },
       {
-        axis: "b0",
+        axis: "c0",
         value: 2
       }
     ],
