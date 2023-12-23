@@ -194,7 +194,7 @@ if (!bonusEnabled) {
 var images = {
   inc: "c0" == 1 ? "/images/1.png" : "c0" == 0.75 ? "/images/2.png" : "c0" == 0.5 ? "/images/3.png" : "c0" == 0.25 ? "/images/4.png" : "/images/default.png",
   delete: "b0" == 1 ? "/images/2.png" : "b0" == 0.75 ? "/images/3.png" : "b0" == 0.5 ? "/images/4.png" : "b0" == 0.25 ? "/images/5.png" : "/images/default.png",
-  even: axesValues[axes[1]] == 1 ? "/images/2.png" : axesValues[axes[1]] == 0.75 ? "/images/3.png" : axesValues[axes[1]] == 0.5 ? "/images/4.png" : axesValues[axes[1]] == 0.25 ? "/images/5.png" : "/images/default.png",
+  even: axesValues[1] == 1 ? "/images/2.png" : axesValues[1] == 0.75 ? "/images/3.png" : axesValues[1] == 0.5 ? "/images/4.png" : axesValues[1] == 0.25 ? "/images/5.png" : "/images/default.png",
   imm: "/images/4.png",
   merge: "/images/5.png",
   separa: "/images/6.png",
